@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-function SmallCard({ img, location, distance }) {
+type LocaleTypes = {
+  img: string;
+  location: string;
+  distance: string;
+};
+
+function SmallCard({ img, location, distance }: LocaleTypes) {
   return (
     <div className="m-2 mt-5 flex transform cursor-pointer items-center space-x-4 rounded-xl transition duration-200 ease-out hover:scale-105 hover:bg-gray-100">
       <div className="relative h-16 w-16">

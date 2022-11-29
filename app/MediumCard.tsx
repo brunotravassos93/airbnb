@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-function MediumCard({ img, title }) {
+type LargeCardTypes = {
+  img: string;
+  title: string;
+};
+
+function MediumCard({ img, title }: LargeCardTypes) {
   return (
     <div className="durantion-300 transform cursor-pointer transition ease-out hover:scale-105">
       <div className="relative h-80 w-80">
